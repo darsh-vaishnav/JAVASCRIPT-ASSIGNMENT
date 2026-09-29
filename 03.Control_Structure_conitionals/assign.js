@@ -1,4 +1,4 @@
-
+const prompt = require('prompt-sync')();
 // //Que 1
 // //let marks =32;
 // // if(marks>=35){
@@ -62,3 +62,47 @@
 // }else{
 //     console.log("Is Consonent")
 // };    
+
+
+// SYNTAX=>
+
+// if(Condition1){
+
+// }else if(Condition2) {
+
+// }else{
+
+// }    
+
+
+// let num = 0
+// if(num>0){
+//     console.log("positive")
+// }else if(num<0){
+//     console.log("negative")
+// }else{
+//     console.log("Zero")
+// }
+
+// let marks = Number(prompt("Enter a marks:"));
+// if(marks<0 || marks>100){
+//     console.log("Invalid marks")
+// }
+// else{
+//     if(marks>35){
+//         console.log("passed")
+//     }else if(marks<35){
+//         console.log("failed")
+//     }else{
+//         console.log("just passed")
+//     }
+// }    
+
+let age = Number(prompt("Enter a age:"));
+if(age<12){
+    console.log("Child Ticket Price is: 100 ")
+}else if(age>=12 && age<=35){
+    console.log("Adult Ticket Price is: 200")
+}else{
+    console.log("Senior Ticket Price is: 150")
+}
