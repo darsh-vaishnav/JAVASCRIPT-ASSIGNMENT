@@ -98,11 +98,64 @@ const prompt = require('prompt-sync')();
 //     }
 // }    
 
-let age = Number(prompt("Enter a age:"));
-if(age<12){
-    console.log("Child Ticket Price is: 100 ")
-}else if(age>=12 && age<=35){
-    console.log("Adult Ticket Price is: 200")
-}else{
-    console.log("Senior Ticket Price is: 150")
+// let age = Number(prompt("Enter a age:"));
+// if(age<12){
+//     console.log("Child Ticket Price is: 100 ")
+// }else if(age>=12 && age<=59){
+//     console.log("Adult Ticket Price is: 200")
+// }else{
+//     console.log("Senior Ticket Price is: 150")
+// }
+
+
+// let num1 = Number(prompt("Enter number 1:"));
+// let num2 = Number(prompt("Enter number 2:"));
+// let num3 = Number(prompt("Enter number 3:"));
+// if((num1>num2) && (num1>num3)){
+//     console.log(num1,"number 1 is largest")
+// }else if((num2>num1)  && (num2>num3) ){
+//     console.log(num2,"number 2 is largest")
+// }else{
+//     console.log(num3,"number 3 is largest")
+// }
+
+
+
+//4. Nested if =>
+
+    // if(condition1){
+    //     if(condition2)
+    // }
+
+    // 1
+// let num1 = Number(prompt("Enter a number:"));
+
+// if (num1 >=0) {
+//     if (num1 % 2 == 0){
+//         console.log("The number is positive and even")
+//     }else{
+//          console.log("The number is positive and odd")
+//     }
+// } else {
+//      if (num1 % 2 == 0){
+//         console.log("The number is negative and even")
+//     }else{
+//          console.log("The number is negative and odd")
+//     }
+// }
+
+
+let marks = Number(prompt("Enter a marks:"));
+
+if(marks>=35){
+        if(marks>=35){
+            console.log("passed")
+        }else{
+            console.log("Excellent")
+        }
+            
+}else (marks<35)
+{
+        console.log("failed")
 }
+    
