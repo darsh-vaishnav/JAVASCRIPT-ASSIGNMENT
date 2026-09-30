@@ -495,3 +495,397 @@ const prompt = require('prompt-sync')();
 // } else {
 //     console.log("Not Eligible - Student is absent");
 // }
+
+// 5.Switch statement
+
+// 1.
+// let month = Number(prompt("Enter the month:"));
+
+// switch(month){
+//     case 1:
+//         console.log("January")
+//         break;
+    
+//     case 2:
+//         console.log("February")
+//         break;  
+    
+//     case 3:
+//         console.log("March")
+//         break;
+    
+//     case 4:
+//         console.log("April")
+//         break;
+        
+//     case 5:
+//         console.log("May")
+//         break;
+
+//     case 6:
+//         console.log("June")
+//         break;
+
+//     case 7:
+//         console.log("July")
+//         break;
+
+//     case 8:
+//         console.log("August")
+//         break;
+
+//     case 9:
+//         console.log("September")
+//         break; 
+
+//     case 10:
+//         console.log("October")
+//         break; 
+
+//     case 11:
+//         console.log("November")
+//         break; 
+
+//     case 12:
+//         console.log("December")
+//         break; 
+        
+//     default:
+//         console.log("Invalid input")    
+                                                             
+// }      
+
+// //2.
+// let ch = prompt("Enter a character:");
+
+// switch (ch.toLowerCase()) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         console.log("Vowel");
+//         break;
+
+//     default:
+//         console.log("Consonant");
+// }
+
+// let ch = prompt("Enter a character:");
+
+// switch (true){
+//     case (ch=="a" || ch=="A"):
+//         console.log("vowels")
+//         break;
+        
+//     case (ch=="e" || ch=="E"):
+//         console.log("vowels")
+//         break;
+
+//     case (ch=="i" || ch=="I"):
+//         console.log("vowels")
+//         break;
+        
+//     case (ch=="o" || ch=="O"):
+//         console.log("vowels")
+//         break;
+        
+//     case (ch=="u" || ch=="U"):
+//         console.log("vowels")
+//         break;
+
+//     default:
+//         console.log("Consonant")   
+//         break;
+// }
+
+// //3.
+// let season =Number(prompt("Enter the season"));
+
+// switch(true){
+//     case (season==1 || season==2):
+//         console.log ("Winter")
+//         break;
+    
+//     case(season==3|| season==4):
+//         console.log("Summer")
+//         break;
+
+//     default:
+//         console.log("Invalid input")  
+//         break;  
+
+// }
+
+// // 4.
+// let marks = Number(prompt("Enter the number:"))
+
+// switch(true){
+//     case(marks>=75 && marks<=100):
+//         console.log("Distinction")
+//         break;
+//     case(marks>=60 && marks<=74):
+//         console.log("1st class")
+//         break;
+//     case(marks>=50 && marks<=59):
+//         console.log("2nd class")
+//         break;
+//     case(marks>=35 && marks<=49):
+//         console.log("3rd class")
+//         break; 
+//     case(percentage>=0 && percentage<35):
+//         console.log("Failed")
+//         break;   
+//     default:
+//         console.log("Invalid output")
+
+// }
+
+//5
+let role = prompt("Enter your role:")
+
+switch(role.toLowerCase()){
+    case"admin":
+      let action = prompt ("Enter the action:")
+
+      switch(action.toLowerCase()){
+        case"create":
+          console.log("Admin can create")
+          break
+        case"edit":
+          console.log("Admin can edit")
+          break  
+        case"delete":
+          console.log("Admin can delete")
+          break  
+      }
+      break;
+    case"user":
+      console.log("Limited Access")
+      break;
+    default:
+        console.log("Invalid input")
+        break;
+
+}
+
+//6.
+let fruit = "mango";
+
+switch (fruit) {
+  case "apple":
+    console.log("Apple is red");
+    break;
+  case "mango":
+    console.log("Mango is yellow");
+    break;
+  case "banana":
+    console.log("Banana is yellow");
+    break;
+  default:
+    console.log("Unknown fruit");
+    break;
+}
+
+//7.
+let value = "0";
+
+switch (value) {
+    case 0:
+        console.log("This is the number 0");
+        break;
+
+    case "0":
+        console.log("This is the string '0'");
+        break;
+
+    case false:
+        console.log("This is false");
+        break;
+
+    case null:
+        console.log("This is null");
+        break;
+
+    case undefined:
+        console.log("This is undefined");
+        break;
+
+    default:
+        console.log("Unknown value");
+}
+
+//8
+let a = Number(prompt("Enter first number:"));
+let operator = prompt("Enter operator (+, -, *, /, %, **):");
+let b = Number(prompt("Enter second number:"));
+
+switch (operator) {
+    case "+":
+        console.log("Result:", a + b);
+        break;
+
+    case "-":
+        console.log("Result:", a - b);
+        break;
+
+    case "*":
+        console.log("Result:", a * b);
+        break;
+
+    case "/":
+        if (b === 0) {
+            console.log("Cannot divide by zero");
+        } else {
+            console.log("Result:", a / b);
+        }
+        break;
+
+    case "%":
+        if (b === 0) {
+            console.log("Cannot find remainder with zero");
+        } else {
+            console.log("Result:", a % b);
+        }
+        break;
+
+    case "**":
+        console.log("Result:", a ** b);
+        break;
+
+    default:
+        console.log("Invalid operator");
+}
+
+//9
+
+let day = Number(prompt("Enter day number of the month:"));
+
+switch (true) {
+    case day >= 1 && day <= 10:
+        console.log("Beginning of the month");
+        break;
+
+    case day >= 11 && day <= 20:
+        console.log("Middle of the month");
+        break;
+
+    case day >= 21 && day <= 31:
+        console.log("End of the month");
+        break;
+
+    default:
+        console.log("Invalid day");
+}
+
+//10
+let category = prompt("Enter category :");
+let item = prompt("Enter item:");
+let size = prompt("Enter size (half/full):");
+
+let price;
+
+switch (category) {
+
+    case "veg":
+
+        switch (item) {
+
+            case "pizza":
+
+                switch (size) {
+                    case "half":
+                        price = 150;
+                        break;
+
+                    case "full":
+                        price = 280;
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+
+                break;
+
+            case "burger":
+
+                switch (size) {
+                    case "half":
+                        price = 80;
+                        break;
+
+                    case "full":
+                        price = 140;
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+
+                break;
+
+            default:
+                console.log("Invalid veg item");
+        }
+
+        break;
+
+
+    case "nonveg":
+
+        switch (item) {
+
+            case "pizza":
+
+                switch (size) {
+                    case "half":
+                        price = 200;
+                        break;
+
+                    case "full":
+                        price = 350;
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+
+                break;
+
+            case "burger":
+
+                switch (size) {
+                    case "half":
+                        price = 120;
+                        break;
+
+                    case "full":
+                        price = 180;
+                        break;
+
+                    default:
+                        console.log("Invalid size");
+                }
+
+                break;
+
+            default:
+                console.log("Invalid nonveg item");
+        }
+
+        break;
+
+
+    default:
+        console.log("Invalid category");
+}
+
+
+if (price !== undefined) {
+    console.log("----- ORDER SUMMARY -----");
+    console.log("Category:", category);
+    console.log("Item:", item);
+    console.log("Size:", size);
+    console.log("Price: ₹" + price);
+}
