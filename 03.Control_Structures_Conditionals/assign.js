@@ -285,31 +285,57 @@ const prompt = require('prompt-sync')();
                                                              
 // }      
 
-//3 
-let percentage = Number(prompt("Enter the number:"))
+// //3 
+// let percentage = Number(prompt("Enter the number:"))
 
-switch(true){
-    case(percentage>=90 && percentage<=100):
-        console.log("A")
-        break;
-    case(percentage>=75 && percentage<=89):
-        console.log("B")
-        break;
-    case(percentage>=60 && percentage<=74):
-        console.log("C")
-        break;
-    case(percentage>=36 && percentage<=59):
-        console.log("D")
-        break; 
-    case(percentage>=0 && percentage<=35):
-        console.log("F")
-        break;   
-    default:
-        console.log("Invalid output")
+// switch(true){
+//     case(percentage>=90 && percentage<=100):
+//         console.log("A")
+//         break;
+//     case(percentage>=75 && percentage<=89):
+//         console.log("B")
+//         break;
+//     case(percentage>=60 && percentage<=74):
+//         console.log("C")
+//         break;
+//     case(percentage>=36 && percentage<=59):
+//         console.log("D")
+//         break; 
+//     case(percentage>=0 && percentage<=35):
+//         console.log("F")
+//         break;   
+//     default:
+//         console.log("Invalid output")
 
-}
+// }
 
 // ternary operator=> shortcut way to write if_else [ES6/ES]
 
 //syntax => condition ? if condition is true: if condition is false;    
 
+//1
+// let num = Number(prompt("Enter a number:"));
+// if(num%2==0){
+//     console.log("Even")
+// } else {
+//     console.log("Odd")
+// }
+// let num = 6;
+// let result = num % 2 === 0 ? "Even" : "Odd";
+// console.log(result);
+
+//2
+// let number = Number(prompt("Enter a number:"));
+// let result = number > 0 ? "Positive" : num==0? "Zero": "Negative";
+// console.log(result);
+
+
+//3
+// let marks = Number(prompt("Enter a marks:"));
+// let result = marks >=35 ? "Pass" : num==0? "Zero": "Negative";
+// console.log(result);
+
+let number1 = Number(prompt("Enter a number 1:"))
+let number2 = Number(prompt("Enter a number 2:"))
+let result = number1 > number2 ? "Number 1 is greater" : number1 < number2 ? "Number 2 is greater" : "Both numbers are equal";
+console.log(result);
