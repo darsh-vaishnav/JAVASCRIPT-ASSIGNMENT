@@ -641,251 +641,351 @@ const prompt = require('prompt-sync')();
 
 // }
 
+// //5
+// let role = prompt("Enter your role:")
+
+// switch(role.toLowerCase()){
+//     case"admin":
+//       let action = prompt ("Enter the action:")
+
+//       switch(action.toLowerCase()){
+//         case"create":
+//           console.log("Admin can create")
+//           break
+//         case"edit":
+//           console.log("Admin can edit")
+//           break  
+//         case"delete":
+//           console.log("Admin can delete")
+//           break  
+//       }
+//       break;
+//     case"user":
+//       console.log("Limited Access")
+//       break;
+//     default:
+//         console.log("Invalid input")
+//         break;
+
+// }
+
+// //6.
+// let fruit = "mango";
+
+// switch (fruit) {
+//   case "apple":
+//     console.log("Apple is red");
+//     break;
+//   case "mango":
+//     console.log("Mango is yellow");
+//     break;
+//   case "banana":
+//     console.log("Banana is yellow");
+//     break;
+//   default:
+//     console.log("Unknown fruit");
+//     break;
+// }
+
+// //7.
+// let value = "0";
+
+// switch (value) {
+//     case 0:
+//         console.log("This is the number 0");
+//         break;
+
+//     case "0":
+//         console.log("This is the string '0'");
+//         break;
+
+//     case false:
+//         console.log("This is false");
+//         break;
+
+//     case null:
+//         console.log("This is null");
+//         break;
+
+//     case undefined:
+//         console.log("This is undefined");
+//         break;
+
+//     default:
+//         console.log("Unknown value");
+// }
+
+// //8
+// let a = Number(prompt("Enter first number:"));
+// let operator = prompt("Enter operator (+, -, *, /, %, **):");
+// let b = Number(prompt("Enter second number:"));
+
+// switch (operator) {
+//     case "+":
+//         console.log("Result:", a + b);
+//         break;
+
+//     case "-":
+//         console.log("Result:", a - b);
+//         break;
+
+//     case "*":
+//         console.log("Result:", a * b);
+//         break;
+
+//     case "/":
+//         if (b === 0) {
+//             console.log("Cannot divide by zero");
+//         } else {
+//             console.log("Result:", a / b);
+//         }
+//         break;
+
+//     case "%":
+//         if (b === 0) {
+//             console.log("Cannot find remainder with zero");
+//         } else {
+//             console.log("Result:", a % b);
+//         }
+//         break;
+
+//     case "**":
+//         console.log("Result:", a ** b);
+//         break;
+
+//     default:
+//         console.log("Invalid operator");
+// }
+
+// //9
+
+// let day = Number(prompt("Enter day number of the month:"));
+
+// switch (true) {
+//     case day >= 1 && day <= 10:
+//         console.log("Beginning of the month");
+//         break;
+
+//     case day >= 11 && day <= 20:
+//         console.log("Middle of the month");
+//         break;
+
+//     case day >= 21 && day <= 31:
+//         console.log("End of the month");
+//         break;
+
+//     default:
+//         console.log("Invalid day");
+// }
+
+// //10
+// let category = prompt("Enter category :");
+// let item = prompt("Enter item:");
+// let size = prompt("Enter size (half/full):");
+
+// let price;
+
+// switch (category) {
+
+//     case "veg":
+
+//         switch (item) {
+
+//             case "pizza":
+
+//                 switch (size) {
+//                     case "half":
+//                         price = 150;
+//                         break;
+
+//                     case "full":
+//                         price = 280;
+//                         break;
+
+//                     default:
+//                         console.log("Invalid size");
+//                 }
+
+//                 break;
+
+//             case "burger":
+
+//                 switch (size) {
+//                     case "half":
+//                         price = 80;
+//                         break;
+
+//                     case "full":
+//                         price = 140;
+//                         break;
+
+//                     default:
+//                         console.log("Invalid size");
+//                 }
+
+//                 break;
+
+//             default:
+//                 console.log("Invalid veg item");
+//         }
+
+//         break;
+
+
+//     case "nonveg":
+
+//         switch (item) {
+
+//             case "pizza":
+
+//                 switch (size) {
+//                     case "half":
+//                         price = 200;
+//                         break;
+
+//                     case "full":
+//                         price = 350;
+//                         break;
+
+//                     default:
+//                         console.log("Invalid size");
+//                 }
+
+//                 break;
+
+//             case "burger":
+
+//                 switch (size) {
+//                     case "half":
+//                         price = 120;
+//                         break;
+
+//                     case "full":
+//                         price = 180;
+//                         break;
+
+//                     default:
+//                         console.log("Invalid size");
+//                 }
+
+//                 break;
+
+//             default:
+//                 console.log("Invalid nonveg item");
+//         }
+
+//         break;
+
+
+//     default:
+//         console.log("Invalid category");
+// }
+
+
+// if (price !== undefined) {
+//     console.log("----- ORDER SUMMARY -----");
+//     console.log("Category:", category);
+//     console.log("Item:", item);
+//     console.log("Size:", size);
+//     console.log("Price: ₹" + price);
+// }
+
+// // 6 .Ternary operator
+
+//1.
+// let num = Number(prompt("Enter an number:"));
+// let result = num % 7 == 0 ? "Number is divisible by 7" : "Number is not divisible by 7";
+// console.log(result);
+
+// //2.
+// let Temperature = Number(prompt("Enter an Temperature:"));
+// let result = Temperature >= 30 ? "Hot Day" : "Pleasant Day";
+// console.log(result);
+
+//3.
+// let String = prompt("Enter an Temperature:");
+// let result = String ==="" ? "Empty String" : "Non-empty String";
+// console.log(result);
+
+//4.
+// let age = Number(prompt("Enter your age:"));
+// let result = age >13 ? "child": age >=13 && age <=19 ? "Teenager":"Adult"
+// console.log(result);
+
 //5
-let role = prompt("Enter your role:")
-
-switch(role.toLowerCase()){
-    case"admin":
-      let action = prompt ("Enter the action:")
-
-      switch(action.toLowerCase()){
-        case"create":
-          console.log("Admin can create")
-          break
-        case"edit":
-          console.log("Admin can edit")
-          break  
-        case"delete":
-          console.log("Admin can delete")
-          break  
-      }
-      break;
-    case"user":
-      console.log("Limited Access")
-      break;
-    default:
-        console.log("Invalid input")
-        break;
-
-}
+// let num1 =Number(prompt("Enter first number:"));
+// let num2 =Number(prompt("Enter second number:"));
+// let num3 =Number(prompt("Enter third number:"));
+// let largest = num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3);
+// console.log("The largest number is:", largest);
 
 //6.
-let fruit = "mango";
-
-switch (fruit) {
-  case "apple":
-    console.log("Apple is red");
-    break;
-  case "mango":
-    console.log("Mango is yellow");
-    break;
-  case "banana":
-    console.log("Banana is yellow");
-    break;
-  default:
-    console.log("Unknown fruit");
-    break;
-}
+// let marks = Number(prompt("Enter your marks:"));
+// let result =marks >=75 ? "Distinction" : marks >=60&& marks<=74 ? "First Class" : marks >=50 && marks<=59 ? "Second Class" : marks >=35 && marks<=49 ? "Pass" : "Fail"
+// console.log(result);
 
 //7.
-let value = "0";
+// let num = Number(prompt("Enter a number:"));
 
-switch (value) {
-    case 0:
-        console.log("This is the number 0");
-        break;
+// let result = num === 0 ? "Zero": num > 0 ? num % 2 === 0 ? "Positive Even": "Positive Odd": num % 2 === 0 ? "Negative Even": "Negative Odd";
 
-    case "0":
-        console.log("This is the string '0'");
-        break;
+// console.log(result);
 
-    case false:
-        console.log("This is false");
-        break;
+// //8.
+// let year = Number(prompt("Enter a year:"));
 
-    case null:
-        console.log("This is null");
-        break;
+// let result =
+//     year % 4 === 0
+//         ? year % 100 === 0
+//             ? year % 400 === 0
+//                 ? "Leap Year"
+//                 : "Not a Leap Year"
+//             : "Leap Year"
+//         : "Not a Leap Year";
 
-    case undefined:
-        console.log("This is undefined");
-        break;
+// console.log(result);
 
-    default:
-        console.log("Unknown value");
-}
+// //9.
+// let role = prompt("Enter role:");
+// let action = prompt("Enter action:");
 
-//8
-let a = Number(prompt("Enter first number:"));
-let operator = prompt("Enter operator (+, -, *, /, %, **):");
-let b = Number(prompt("Enter second number:"));
+// let result =
+//     role === "admin"
+//         ? action === "delete"
+//             ? "Admin Delete"
+//             : action === "edit"
+//                 ? "Admin Edit"
+//                 : "Admin Other"
+//         : role === "user"
+//             ? action === "view"
+//                 ? "User View"
+//                 : "User Restricted"
+//             : "Invalid Role";
 
-switch (operator) {
-    case "+":
-        console.log("Result:", a + b);
-        break;
+// console.log(result);
 
-    case "-":
-        console.log("Result:", a - b);
-        break;
+// //10.
+// let cartTotal = Number(prompt("Enter cart total:"));
 
-    case "*":
-        console.log("Result:", a * b);
-        break;
+// let result =
+//     cartTotal >= 5000
+//         ? {
+//             discount: "20%",
+//             finalAmount: cartTotal - cartTotal * 0.20
+//         }
+//         : cartTotal >= 2000
+//             ? {
+//                 discount: "10%",
+//                 finalAmount: cartTotal - cartTotal * 0.10
+//             }
+//             : cartTotal >= 1000
+//                 ? {
+//                     discount: "5%",
+//                     finalAmount: cartTotal - cartTotal * 0.05
+//                 }
+//                 : {
+//                     discount: "0%",
+//                     finalAmount: cartTotal
+//                 };
 
-    case "/":
-        if (b === 0) {
-            console.log("Cannot divide by zero");
-        } else {
-            console.log("Result:", a / b);
-        }
-        break;
-
-    case "%":
-        if (b === 0) {
-            console.log("Cannot find remainder with zero");
-        } else {
-            console.log("Result:", a % b);
-        }
-        break;
-
-    case "**":
-        console.log("Result:", a ** b);
-        break;
-
-    default:
-        console.log("Invalid operator");
-}
-
-//9
-
-let day = Number(prompt("Enter day number of the month:"));
-
-switch (true) {
-    case day >= 1 && day <= 10:
-        console.log("Beginning of the month");
-        break;
-
-    case day >= 11 && day <= 20:
-        console.log("Middle of the month");
-        break;
-
-    case day >= 21 && day <= 31:
-        console.log("End of the month");
-        break;
-
-    default:
-        console.log("Invalid day");
-}
-
-//10
-let category = prompt("Enter category :");
-let item = prompt("Enter item:");
-let size = prompt("Enter size (half/full):");
-
-let price;
-
-switch (category) {
-
-    case "veg":
-
-        switch (item) {
-
-            case "pizza":
-
-                switch (size) {
-                    case "half":
-                        price = 150;
-                        break;
-
-                    case "full":
-                        price = 280;
-                        break;
-
-                    default:
-                        console.log("Invalid size");
-                }
-
-                break;
-
-            case "burger":
-
-                switch (size) {
-                    case "half":
-                        price = 80;
-                        break;
-
-                    case "full":
-                        price = 140;
-                        break;
-
-                    default:
-                        console.log("Invalid size");
-                }
-
-                break;
-
-            default:
-                console.log("Invalid veg item");
-        }
-
-        break;
-
-
-    case "nonveg":
-
-        switch (item) {
-
-            case "pizza":
-
-                switch (size) {
-                    case "half":
-                        price = 200;
-                        break;
-
-                    case "full":
-                        price = 350;
-                        break;
-
-                    default:
-                        console.log("Invalid size");
-                }
-
-                break;
-
-            case "burger":
-
-                switch (size) {
-                    case "half":
-                        price = 120;
-                        break;
-
-                    case "full":
-                        price = 180;
-                        break;
-
-                    default:
-                        console.log("Invalid size");
-                }
-
-                break;
-
-            default:
-                console.log("Invalid nonveg item");
-        }
-
-        break;
-
-
-    default:
-        console.log("Invalid category");
-}
-
-
-if (price !== undefined) {
-    console.log("----- ORDER SUMMARY -----");
-    console.log("Category:", category);
-    console.log("Item:", item);
-    console.log("Size:", size);
-    console.log("Price: ₹" + price);
-}
+// console.log(result);
