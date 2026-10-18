@@ -119,9 +119,9 @@ The idea is simple:
 | 04 | ➕ Arithmetic Operators        | ✅ Completed    |
 | 05 | 🔍 Comparison Operators       | ✅ Completed    |
 | 06 | 🧠 Logical Operators          | ✅ Completed    |
-| 07 | 🔀 Conditional Statements     | 🔄 Learning    |
-| 08 | 🔁 Loops                      | 🔄 Learning    |
-| 09 | 📦 Functions                  | 🔄 Learning    |
+| 07 | 🔀 Conditional Statements     | ✅ Learning    |
+| 08 | 🔁 Loops                      | ✅ Learning    |
+| 09 | 📦 Functions                  |✅ Learning    |
 | 10 | 📋 Arrays                     | 🔄 Learning    |
 | 11 | 🔤 Strings                    | 🔄 Learning    |
 | 12 | 🎯 Objects                    | 🔄 Learning    |
