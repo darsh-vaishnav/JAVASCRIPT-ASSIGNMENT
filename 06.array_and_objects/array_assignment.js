@@ -1,7 +1,6 @@
 
-/* =========================================
-   1. WHAT IS AN ARRAY?
-   ========================================= */
+//   1. WHAT IS AN ARRAY?
+
 
 // Q1. An array is an ordered collection of values
 //     stored in a single variable.
@@ -20,9 +19,9 @@ console.log(numbers[3]);
 // Output: 40
 
 
-/* =========================================
-   2. CREATING ARRAYS
-   ========================================= */
+
+//   2. CREATING ARRAYS
+
 
 // Q1. Two ways:
 //     1. Array literal []
@@ -46,9 +45,9 @@ console.log(marks);
 // [85, 90, 78]
 
 
-/* =========================================
-   3. ACCESSING VALUES IN AN ARRAY
-   ========================================= */
+
+//   3. ACCESSING VALUES IN AN ARRAY
+
 
 // Q1. Use the index inside square brackets [].
 
@@ -71,9 +70,7 @@ console.log(colors[0]);
 // Output: Red
 
 
-/* =========================================
-   4. UPDATING VALUES
-   ========================================= */
+//  4. UPDATING VALUES
 
 // Q1. Assign a new value using the index.
 
