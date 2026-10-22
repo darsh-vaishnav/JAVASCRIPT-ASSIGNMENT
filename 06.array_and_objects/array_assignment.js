@@ -98,8 +98,7 @@ console.log(numbers2.length);
 // [10, 20, 30, <2 empty items>, 60]
 // 6
 
-
-
+//  5. Array Length
 // Q1.
 //  The built-in property is length.
 
@@ -122,7 +121,7 @@ console.log(emptyArray.length);
 //     Correct: arr.length
 //     Incorrect: arr.length()
 
-
+// 6. Looping Through Arrays
 
 
 // Q1. The two loops are for and while.
@@ -159,3 +158,116 @@ for (var j = 0; j <= students3.length; j++) {
 // Priyesha
 // Yashvi
 // undefined
+
+// Q6.
+const subject = ["HTML", "CSS", "JavaScript", "Python"];
+
+for (const sub of subject) {
+    console.log(sub);
+}
+
+// // Q7.
+// Answer: A for...of loop is simpler and easier 
+//         to read because it directly accesses each 
+//         value without needing an index variable.
+
+// Q8.
+const colors = ["Red", "Blue", "Green"];
+for (const color of colors) {
+    console.log(color, indexOf(color));
+}
+
+// Output:
+// Red
+// Blue
+// Green
+
+// 7 . Adding Elements to Arrays
+
+// Q1.
+// push() → Add at the end is ues to add the element
+
+// Q2.
+//unshift() → Add at the beginning is use to element at beginning
+
+// Q3.
+let nums = [1, 2, 3];
+nums.push(4);
+console.log(nums); // [1, 2, 3, 4]
+
+// Q4.
+nums.unshift(0);
+console.log(nums); // [0, 1, 2, 3, 4]
+
+// Q5.
+// Both push() and unshift() modify the original array.
+// - push() → adds an element to the end of the array.
+// - unshift() → adds an element to the beginning of the array.
+
+// 8 . Removing Elements
+
+// Q1
+//pop() → Remove last element of array
+
+// Q2
+//shift() → Remove first element of array
+
+// Q3
+//// let nums =[100, 200, 300, 400, 500]
+
+// nums.pop();
+// console.log(nums);
+
+// Q4
+// nums.shift();                                  
+// console.log(nums);
+
+// // Q5
+// Answer: Both pop() and shift() return the removed element 
+// and modify the original array. 
+// - pop() → removes and returns the last element.
+// - shift() → removes and returns the first element.
+
+// 9.Searching in Arrays
+
+// Q1.
+//It returns the index (position) of the first matching 
+// element. Array indexing starts at 0
+
+// Q2.
+//It returns -1.
+
+// // Q3 Q4.
+// const names = ["Jenil", "Mahir", "Arjun"];
+// console.log(names.indexOf("Mahir")); // 1
+// console.log(names.indexOf("Krishna")); // -1
+
+// // Q5
+// console.log(students.indexOf("Priyesha"));
+
+// 10 .Array with Different Data Types
+
+// // Q1.
+// Answer: Yes. A JavaScript array can store numbers, strings, 
+// booleans, null, and other data types in the same array.
+
+// Q2
+// const data = [100, "Hello", true, null];
+
+// // Q3
+// const data = [100, "Hello", true, null];
+
+// console.log(typeof data[0]); // number
+// console.log(typeof data[1]); // string
+// console.log(typeof data[2]); // boolean
+// console.log(typeof data[3]); // object
+
+// Q4
+// Answer: "number"
+// Because data[0] contains 100.
+
+// // Q5
+// Answer: "boolean"
+// Because data[2] contains true.
+// Important MCQ fact: In JavaScript, typeof null returns "object".
+//  This is a long-standing JavaScript quirk.

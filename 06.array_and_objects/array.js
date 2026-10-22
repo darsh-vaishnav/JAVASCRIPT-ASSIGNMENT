@@ -86,7 +86,9 @@
 // nums.pop();
 // console.log(nums);
 
-// nums.shift();
+// nums.shift();                                  
 // console.log(nums);
+
+//-------------- 8. Removing Elements---------------------//
 
 
